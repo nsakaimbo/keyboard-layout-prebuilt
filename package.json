@@ -4,7 +4,8 @@
   "description": "Read and observe the current keyboard layout on OS X.",
   "main": "./lib/keyboard-layout",
   "scripts": {
-    "test": "jasmine-focused --captureExceptions --forceexit spec"
+    "test": "jasmine-focused --captureExceptions --forceexit spec",
+    "install": "prebuild-install || node-gyp rebuild"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   ],
   "dependencies": {
     "event-kit": "^1.0.0",
-    "nan": "^2.0.0"
+    "nan": "^2.0.0",
+    "prebuild": "^7.0.0",
+    "prebuild-install": "^2.4.1"
   },
   "devDependencies": {
     "jasmine-focused": "^1.0.4"
