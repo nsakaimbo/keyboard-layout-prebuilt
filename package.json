@@ -5,7 +5,7 @@
   "main": "./lib/keyboard-layout",
   "scripts": {
     "test": "jasmine-focused --captureExceptions --forceexit spec",
-    "install": "prebuild-install || node-gyp rebuild"
+    "install": "prebuild-install -t 1.7.16 -r electron || node-gyp rebuild"
   },
   "repository": {
     "type": "git",
